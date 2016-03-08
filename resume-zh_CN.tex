@@ -1,0 +1,98 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green,urlcolor=blue]{hyperref}
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{ 冯 \hspace{0.1cm}溢 \hspace{0.1cm}濠 }
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{\href{mailto:lewisfyh2012@gmail.com}{lewisfyh2012@gmail.com}}{(+86) 156-529-54818}{}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap 教育背景}
+\datedsubsection{\textbf{北京航空航天大学}, 北京}{2012年9月 --2016年7月}
+\textit{在读学士}\ 软件工程
+
+排名: 4 / 134 \ 成绩: 89.64 / 100 (主科目：90.43 / 100 )
+
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 研究兴趣：机器学习，概率图模型，数据挖掘，社交网络，多模态建模
+  \item 编程语言：C / C++, Java, C\#, PHP, Python, JavaScript,
+  \item 编程框架：Node.js, Django, Android, WPF
+  \item 科学软件：Matlab, Mathematics, Weka, openSMILE, Torch, LightSide
+\end{itemize}
+
+
+\section{\faUsers\ 科研 / 项目经历}
+\datedsubsection{\textbf{ArticuLab}, 卡内基梅隆大学, 美国}{2015年7月 -- 2015年9月}
+\role{暑期科研实习}{导师：\ Prof.Justine Cassell \& Dr.Alexandros Papangelis}
+\textbf{科研主题}：研究用多模态数据对人与人、人与虚拟机器人的关系建模
+\begin{itemize}
+\item 用openSMILE 和 CLM-Framework 提取了音频特征和图像特征，并将其同步化
+\item 解决了清理数据、特征筛选、不平衡数据等常见问题，用Weka完成基础算法实验
+\item 用线性条件随机场(linear-CRF)将该问题描述成时序问题，实现74\%的准确率
+\item 用隐式条件随机场(Hidden CRF)来描绘关系之间的内在联系，实现70\%的准确率
+\end{itemize}
+
+\datedsubsection{\textbf{机器感知与智能教育部重点实验室}, 北京大学, 中国}{2014年10月 -- 至今}
+\role{研究助教}{导师: \ 宋国杰教授}
+\textbf{科研主题}：移动社交网络中的关系识别
+\begin{itemize}
+\item 提出一种基于\textbf{TF-IDF}, 可以从从LBS服务中提取地理语意的方法
+\item 在社交网络图中用了一种平衡敏感参数，改善了数据不平衡问题
+\item 在移动通话网络中使用社交学中的结构平衡理论在模型中建立了三元团因子
+\item 基于以上发现构建了一个基于因子图的模型(Balanced Triadic Factor Graph)
+\end{itemize}
+
+\datedsubsection{\textbf{Mathematical Modeling \& Algorithms Laboratory}, 筑波大学, 日本}{2014年7月}
+\role{访问学者}{导师：前田恭行博士}
+\textbf{科研主题}：图像识别科训练
+\begin{itemize}
+\item 学习使用了一些基础机器学习方法(SVM,PCA)等来解决图像识别问题
+\item 使用PCA, SVD方法解决了简单的手写数字图像识别问题
+\end{itemize}
+
+\datedsubsection{\textbf{研发部}，职圈科技有限公司，北京}{2015年2月 -- 2015年6月}
+\role{研发工程师}{经理：吕云}
+\textbf{项目}：职圈安卓手机App
+\begin{itemize}
+\item 独立编写完成了App社交及通讯板块功能
+\item 使用\textbf{User-Based}算法初步实现了用户推荐板块
+\end{itemize}
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\begin{itemize}
+\item \datedline{国家奖学金(前 \textbf{2\%})}{2013 年 9 月}
+\item \datedline{国家励志奖学金(前 \textbf{5\%})}{2014 年 9 月}
+\item \datedline{全国大学生数学建模比赛北京市一等奖}{2014 年 9 月}
+\item \datedline{美国大学生数学建模竞赛(MCM)一等奖}{2015 年 4 月}
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
