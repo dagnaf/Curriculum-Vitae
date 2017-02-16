@@ -84,3 +84,8 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
+
+% http://tex.stackexchange.com/questions/10555/hyperref-warning-token-not-allowed-in-a-pdf-string
+\newcommand{\icontitle}[2]{
+  \texorpdfstring{#1\ #2}{#2}
+}
